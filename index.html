@@ -290,6 +290,11 @@
   <p style="margin-top:6px;">📞 +91 88977 62172</p>
 </footer>
 
+<div id="imgModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:999;">
+  <span onclick="closeImg()" style="position:absolute; top:20px; right:30px; color:white; font-size:30px; cursor:pointer;">×</span>
+  <img id="popupImg" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+
 <script>
   // ─────────────────────────────────────────────
   //  PRODUCTS — Update name, price, image & category here
@@ -351,6 +356,8 @@
       <div class="card" style="animation-delay:${i * 0.07}s">
         <div class="card-img-wrap">
           <img src="${p.image}" alt="${p.name}"
+     onclick="openImg('${p.image}')"
+     style="cursor:pointer"
                onerror="this.src='https://placehold.co/400x440/f5e9c8/9b2335?text=${encodeURIComponent(p.name)}'">
           <span class="card-badge">${p.category === 'Bridal' ? 'Bridal' : 'Daily Wear'}</span>
         </div>
