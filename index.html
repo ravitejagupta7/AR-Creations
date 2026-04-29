@@ -43,11 +43,9 @@
       background: repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(201,168,76,0.03) 30px, rgba(201,168,76,0.03) 31px);
     }
     .logo-mark {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 56px; height: 56px; border-radius: 50%;
-      border: 2px solid var(--gold); color: var(--gold);
-      font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700;
-      margin-bottom: 14px; position: relative; z-index: 1;
+      display: inline-block;
+      width: 140px; height: 140px;
+      margin-bottom: 10px; position: relative; z-index: 1;
       animation: fadeDown 0.6s ease both;
     }
     header h1 {
@@ -211,7 +209,45 @@
 <body>
 
 <header>
-  <div class="logo-mark">AR</div>
+  <div class="logo-mark">
+    <svg width="100%" viewBox="0 0 680 340" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>AR Creations logo</title>
+      <desc>Elegant circular jewelry logo for AR Creations</desc>
+      <defs><style>.lb{fill:#1a0a0e}.ro{fill:none;stroke:#c9a84c;stroke-width:2}.ri{fill:none;stroke:#c9a84c;stroke-width:0.8;opacity:0.5}.gl{stroke:#c9a84c;stroke-width:1}.gf{fill:#c9a84c}.wt{fill:#fff;font-family:Georgia,serif}.gt{fill:#c9a84c;font-family:Georgia,serif}</style></defs>
+      <rect width="680" height="340" fill="transparent"/>
+      <g transform="translate(340,170)">
+        <circle r="138" class="lb"/>
+        <circle r="138" class="ro"/>
+        <circle r="128" class="ri"/>
+        <circle r="122" fill="none" stroke="#c9a84c" stroke-width="0.4" opacity="0.3"/>
+        <polygon points="0,-134 3,-128 0,-122 -3,-128" class="gf"/>
+        <polygon points="0,134 3,128 0,122 -3,128" class="gf"/>
+        <polygon points="-134,0 -128,-3 -122,0 -128,3" class="gf"/>
+        <polygon points="134,0 128,-3 122,0 128,3" class="gf"/>
+        <circle r="6" fill="#c9a84c" cx="0" cy="-115" transform="rotate(22.5)"/>
+        <circle r="6" fill="#c9a84c" cx="0" cy="-115" transform="rotate(67.5)"/>
+        <circle r="6" fill="#c9a84c" cx="0" cy="-115" transform="rotate(112.5)"/>
+        <circle r="6" fill="#c9a84c" cx="0" cy="-115" transform="rotate(157.5)"/>
+        <circle r="6" fill="#c9a84c" cx="0" cy="-115" transform="rotate(202.5)"/>
+        <circle r="6" fill="#c9a84c" cx="0" cy="-115" transform="rotate(247.5)"/>
+        <circle r="6" fill="#c9a84c" cx="0" cy="-115" transform="rotate(292.5)"/>
+        <circle r="6" fill="#c9a84c" cx="0" cy="-115" transform="rotate(337.5)"/>
+        <polygon points="0,-8 8,0 0,8 -8,0" fill="#c9a84c" opacity="0.1" transform="scale(9)"/>
+        <text class="wt" text-anchor="middle" font-size="62" font-weight="bold" letter-spacing="4" y="-16">AR</text>
+        <line x1="-60" y1="4" x2="60" y2="4" stroke="#c9a84c" stroke-width="0.8" opacity="0.7"/>
+        <polygon points="0,-4 4,0 0,4 -4,0" fill="#c9a84c" transform="translate(0,4)"/>
+        <polygon points="0,-3 3,0 0,3 -3,0" fill="#c9a84c" opacity="0.6" transform="translate(-12,4)"/>
+        <polygon points="0,-3 3,0 0,3 -3,0" fill="#c9a84c" opacity="0.6" transform="translate(12,4)"/>
+        <text class="gt" text-anchor="middle" font-size="19" letter-spacing="7" y="28">CREATIONS</text>
+        <line x1="-72" y1="38" x2="72" y2="38" stroke="#c9a84c" stroke-width="0.5" opacity="0.5"/>
+        <text class="gt" text-anchor="middle" font-size="9.5" letter-spacing="3.5" y="54" opacity="0.75">ONE GRAM GOLD</text>
+        <circle r="5" fill="#c0394b" cx="-80" cy="-6"/>
+        <circle r="5" fill="#c0394b" cx="80" cy="-6"/>
+        <circle r="3.5" fill="#c9a84c" cx="-85" cy="38"/>
+        <circle r="3.5" fill="#c9a84c" cx="85" cy="38"/>
+      </g>
+    </svg>
+  </div>
   <h1>AR Creations</h1>
   <p class="header-sub">One Gram Gold Collection</p>
   <div class="header-divider"><span></span><i>✦</i><span></span></div>
@@ -241,7 +277,7 @@
 </div>
 
 <footer>
-  <p>© 2026 <strong>AR Creations</strong> · Made with ♥</p>
+  <p>© 2026 <strong>AR Creations</strong> · Handcrafted with ♥</p>
   <p style="margin-top:6px;">📞 +91 88977 62172</p>
 </footer>
 
@@ -262,7 +298,7 @@
     {
       name: "Coloured Stone Drop Chain",
       price: "849",
-      image: "https://i.ibb.co/6RBBT665/image.jpg",
+      image: "https://i.ibb.co/placeholder/stone-drop.jpg",
       category: "Daily"
     }
   ];
